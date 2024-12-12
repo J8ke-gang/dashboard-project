@@ -1,0 +1,271 @@
+/* General reset for styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecf0f1;
+    display: flex;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Sidebar styling */
+.side-bar {
+    width: 250px; /* Sidebar width */
+    height: 100vh; /* Full height */
+    background-color: #2c3e50; /* Dark background */
+    color: white;
+    position: fixed; /* Fixed position on the left */
+    top: 0;
+    left: 0;
+    padding-top: 30px; /* Space from top */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Sidebar menu items */
+.side-bar .menu {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.side-bar .menu i {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.side-bar .menu:hover {
+    background-color: #34495e; /* Slightly lighter dark blue on hover */
+}
+
+/* Navbar Styling */
+.navbar {
+    margin-left: 250px; /* Offset for the sidebar */
+    width: calc(100% - 250px);
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top section of Navbar */
+.top-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search input {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+}
+
+.account .menuIcon {
+    margin-right: 10px;
+}
+
+.gh-avatar {
+    background-color: #ccc;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.name {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Bottom section of Navbar */
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-name {
+    margin-left: 10px;
+}
+
+.profile-name .greeting {
+    font-size: 14px;
+    color: #666;
+}
+
+.profile-name .name {
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons .btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.buttons .btn:hover {
+    background-color: #2980b9;
+}
+
+/* Main content styling */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+/* Projects section */
+.projects {
+    margin-bottom: 30px;
+}
+
+.projects h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 200px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 18px;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.icons i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #3498db;
+}
+
+.icons i:hover {
+    color: #2980b9;
+}
+
+/* Announcements section */
+.announcements {
+    margin-bottom: 30px;
+}
+
+.announcements ul {
+    list-style-type: none;
+}
+
+.announcement {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 18px;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+/* Trending section */
+.trending h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.trending ul {
+    list-style-type: none;
+}
+
+.trend {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.trend .gh-avatar2, .gh-avatar3, .gh-avatar4 {
+    background-color: #ccc;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.account p.username {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.account p.name {
+    color: #7f8c8d;
+}
