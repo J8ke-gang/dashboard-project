@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     </header>
@@ -13,44 +14,43 @@
     <div class="side-bar">
     <div class="menu">
             <div class="menu">
-              <img src="" alt="" />
+              <i class="fa-solid fa-bars"></i>
               <h1>Dashboard</h1>
             </div>
             <div class="menu">
-              <img src="" alt="" />
+              <i class="fa-solid fa-house"></i>
               <h1>Home</h1>
             </div>
             <div class="menu">
-              <img src="" alt="" />
+              <i class="fa-solid fa-user"></i>
               <h1>Profile</h1>
             </div>
             <div class="menu">
-              <img src="" alt="" />
+              <i class="fa-solid fa-message"></i>
               <h1>Messages</h1>
             </div>
             <div class="menu">
-              <img src="" alt="" />
+              <i class="fa-solid fa-clock-rotate-left"></i>
               <h1>History</h1>
             </div>
             <div class="menu">
-              <img src="" alt="" />
+              <i class="fa-solid fa-file-lines"></i>
               <h1>Tasks</h1>
             </div>
             <div class="menu">
-              <img src="" alt="" />
+              <i class="fa-solid fa-users"></i>
               <h1>Communities</h1>
             </div>
-            
             <div class="menu">
-              <img src="" alt="" />
+              <i class="fa-solid fa-gear"></i>
               <h1>Settings</h1>
             </div>
             <div class="menu">
-              <img src="" alt="" />
+              <i class="fa-solid fa-question"></i>
               <h1>Support</h1>
             </div>
             <div class="menu">
-              <img src="" alt="" />
+              <i class="fa-solid fa-shield-halved"></i>
               <h1>Privacy</h1>
             </div>
           </div>
@@ -58,5 +58,41 @@
           <div class="navbar">
 <!--top-section-->
 <div class="top-nav-bar">
+        <!-- Search icon and search bar -->
+        <div class="search">
+          <div class="menuItem">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <input type="text" name="search" autocomplete="off" />
+        </div>
+        <div class="account">
+          <div class="menuIcon">
+            <i class="fa-solid fa-bell"></i>
+          </div>
+          <!-- Avatar from Github -->
+          <div class="gh-avatar"></div>
+          <!-- Our username -->
+          <p class="name">Jake</p>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="bottom">
+        <!-- Profile details -->
+        <div class="profile">
+          <div class="gh-avatar"></div>
+          <div class="profile-name">
+            <p class="greeting">Hi there,</p>
+            <p class="name">J8ke-gang <span class="username">(Jake)</span></p>
+          </div>
+        </div>
+        <!-- Button section -->
+        <div class="buttons">
+          <button class="btn">New</button>
+          <button class="btn">Upload</button>
+          <button class="btn">Share</button>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
