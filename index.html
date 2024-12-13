@@ -8,181 +8,202 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-   <!-- Sidebar -->
-    <div class="side-bar">
-        <div class="menu">
+    <div class="grid-container">
+        <!-- Sidebar -->
+        <div class="side-bar">
             <div class="menu">
                 <i class="fa-solid fa-bars"></i>
-                <h1>Dashboard</h1>
+                <h2>Dashboard</h2>
             </div>
             <div class="menu">
                 <i class="fa-solid fa-house"></i>
-                <h1>Home</h1>
+                <h2>Home</h2>
             </div>
             <div class="menu">
                 <i class="fa-solid fa-user"></i>
-                <h1>Profile</h1>
+                <h2>Profile</h2>
             </div>
             <div class="menu">
                 <i class="fa-solid fa-message"></i>
-                <h1>Messages</h1>
+                <h2>Messages</h2>
             </div>
             <div class="menu">
                 <i class="fa-solid fa-clock-rotate-left"></i>
-                <h1>History</h1>
+                <h2>History</h2>
             </div>
             <div class="menu">
                 <i class="fa-solid fa-file-lines"></i>
-                <h1>Tasks</h1>
+                <h2>Tasks</h2>
             </div>
             <div class="menu">
                 <i class="fa-solid fa-users"></i>
-                <h1>Communities</h1>
+                <h2>Communities</h2>
             </div>
             <div class="menu">
                 <i class="fa-solid fa-gear"></i>
-                <h1>Settings</h1>
+                <h2>Settings</h2>
             </div>
             <div class="menu">
                 <i class="fa-solid fa-question"></i>
-                <h1>Support</h1>
+                <h2>Support</h2>
             </div>
             <div class="menu">
                 <i class="fa-solid fa-shield-halved"></i>
-                <h1>Privacy</h1>
-            </div>
-        </div>
-    </div>
-
-    <!-- Navbar -->
-    <div class="navbar">
-        <!-- Top Section -->
-        <div class="top-nav-bar">
-            <!-- Search icon and search bar -->
-            <div class="search">
-                <div class="menuItem">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <input type="text" name="search" autocomplete="off" />
-            </div>
-            <div class="account">
-                <div class="menuIcon">
-                    <i class="fa-solid fa-bell"></i>
-                </div>
-                <!-- Avatar from Github -->
-                <div class="gh-avatar"></div>
-                <!-- Our username -->
-                <p class="name">Jake</p>
+                <h2>Privacy</h2>
             </div>
         </div>
 
-        <!-- Bottom Section -->
-        <div class="bottom">
-            <!-- Profile details -->
-            <div class="profile">
-                <div class="gh-avatar"></div>
-                <div class="profile-name">
-                    <p class="greeting">Hi there,</p>
-                    <p class="name">J8ke-gang <span class="username">(Jake)</span></p>
-                </div>
-            </div>
-            <!-- Button section -->
-            <div class="buttons">
-                <button class="btn">New</button>
-                <button class="btn">Upload</button>
-                <button class="btn">Share</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Main Content -->
-    <main class="content">
-        <div class="projects">
-            <h3>Your Projects</h3>
-
-            <!-- Section for all project cards -->
-            <div class="cards">
-                <!-- Card 1-->
-                <div class="card">
-                    <h5 class="card-title">Cool Project</h5>
-                    <p class="card-text">Here is my cool project.</p>
-                    <div class="icons">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-code-branch"></i>
+        <!-- Navbar -->
+        <div class="navbar">
+            <!-- Top Section -->
+            <div class="top-nav-bar">
+                <div class="search">
+                    <div class="menuItem">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
+                    <input type="text" name="search" autocomplete="off" />
                 </div>
-                <!-- Card 2 -->
-                <div class="card">
-                    <h5 class="card-title">Less Cool Project</h5>
-                    <p class="card-text">Here is my less cool project.</p>
-                    <div class="icons">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-eye"></i>
-                        <i class="fa-solid fa-code-branch"></i>
+                <div class="account">
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-bell"></i>
                     </div>
-                </div>
-                <!-- Additional cards here -->
-            </div>
-        </div>
-
-        <!-- Side content - Announcements and Trending -->
-
-        <!-- Announcements -->
-        <div class="announcements">
-            <ul class="card">
-                <!-- List of individual announcements -->
-                <li class="announcement">
-                    <h5 class="card-title">Site Maintenance</h5>
-                    <p class="card-text">This site is just a test with zero function.</p>
-                </li>
-                <li class="announcement">
-                    <h5 class="card-title">Community Share Day</h5>
-                    <p class="card-text">Share comments here.</p>
-                </li>
-                <li class="announcement">
-                    <h5 class="card-title">Updated Privacy Policy</h5>
-                    <p class="card-text">Privacy policy non-existent; this is just a test.</p>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Trending Section -->
-        <div class="trending">
-            <h3>Trending</h3>
-            <ul class="card">
-                <!-- List of all trending people -->
-                <li class="trend trend-1">
-                    <div class="gh-avatar2"></div>
-                    <div class="account">
-                        <p class="username">@tegan</p>
-                        <p class="name card-text">World Peace Builder</p>
-                    </div>
-                </li>
-                <li class="trend trend-2">
                     <div class="gh-avatar"></div>
-                    <div class="account">
-                        <p class="username">@Jake</p>
-                        <p class="name card-text">Coolest Project Ever</p>
+                    <p class="name">Jake</p>
+                </div>
+            </div>
+            <!-- Bottom Section -->
+            <div class="bottom">
+                <div class="profile">
+                    <div class="gh-avatar"></div>
+                    <div class="profile-name">
+                        <p class="greeting">Hi there,</p>
+                        <p class="name">J8ke-gang <span class="username">(Jake)</span></p>
                     </div>
-                </li>
-                <li class="trend trend-3">
-                    <div class="gh-avatar3"></div>
-                    <div class="account">
-                        <p class="username">@kendall</p>
-                        <p class="name card-text">Life Changing App</p>
-                    </div>
-                </li>
-                <li class="trend trend-4">
-                    <div class="gh-avatar4"></div>
-                    <div class="account">
-                        <p class="username">@alex</p>
-                        <p class="name card-text">No Traffic Maker</p>
-                    </div>
-                </li>
-            </ul>
+                </div>
+                <div class="buttons">
+                    <button class="btn">New</button>
+                    <button class="btn">Upload</button>
+                    <button class="btn">Share</button>
+                </div>
+            </div>
         </div>
-    </main>
 
+        <!-- Main Content 6 cards-->
+        <main class="content">
+            <div class="projects">
+                <h3>Your Projects</h3>
+                <div class="cards">
+                    <div class="card">
+                        <h5 class="card-title">Cool Project</h5>
+                        <p class="card-text">Here is my cool project.</p>
+                        <div class="icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-title">Less Cool Project</h5>
+                        <p class="card-text">Here is my less cool project.</p>
+                        <div class="icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-title">Impossible app</h5>
+                        <p class="card-text">Here is my impossible app.</p>
+                        <div class="icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-title">Easy app</h5>
+                        <p class="card-text">Here is my easy app.</p>
+                        <div class="icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-title">Ad blocker</h5>
+                        <p class="card-text">Here is my ad blocker.</p>
+                        <div class="icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h5 class="card-title">Money maker</h5>
+                        <p class="card-text">Here is my money maker.</p>
+                        <div class="icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--right side-->
+            <div class="right-side">
+                <!--announcement section-->
+            <div class="announcements">
+                <ul class="card">
+                    <h3>Announcements</h3>
+                    <li class="announcement">
+                        <h5 class="card-title">Site Maintenance</h5>
+                        <p class="card-text">This site is just a test with zero function.</p>
+                    </li>
+                    <li class="announcement">
+                        <h5 class="card-title">Community Share Day</h5>
+                        <p class="card-text">Share comments here.</p>
+                    </li>
+                    <li class="announcement">
+                        <h5 class="card-title">Updated Privacy Policy</h5>
+                        <p class="card-text">Privacy policy non-existent; this is just a test.</p>
+                    </li>
+                </ul>
+            </div>
+        <!--trending section-->
+            <div class="trending">
+                <h3>Trending</h3>
+                <ul class="card">
+                    <li class="trend trend-1">
+                        <div class="gh-avatar2"></div>
+                        <div class="account">
+                            <p class="username">@tegan</p>
+                            <p class="name card-text">World Peace Builder</p>
+                        </div>
+                    </li>
+                    <li class="trend trend-2">
+                        <div class="gh-avatar"></div>
+                        <div class="account">
+                            <p class="username">@Jake</p>
+                            <p class="name card-text">Coolest Project Ever</p>
+                        </div>
+                    </li>
+                    <li class="trend trend-3">
+                        <div class="gh-avatar3"></div>
+                        <div class="account">
+                            <p class="username">@kendall</p>
+                            <p class="name card-text">Life Changing App</p>
+                        </div>
+                    </li>
+                    <li class="trend trend-4">
+                        <div class="gh-avatar4"></div>
+                        <div class="account">
+                            <p class="username">@alex</p>
+                            <p class="name card-text">No Traffic Maker</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
