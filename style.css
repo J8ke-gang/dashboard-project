@@ -36,12 +36,11 @@ body, html {
 }
 
 /* Navbar */
-.navbar {
-    grid-area: navbar;
-    background-color: #34495e;
-    color: white;
-    display: flex;
-    justify-content: space-between;
+.top-nav-bar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+
 }
 
 .content {
@@ -125,6 +124,23 @@ body, html {
 }
 
 /* Trending section */
+/* Styling for stacking name and description */
+.name-card-text {
+    display: flex;
+    flex-direction: column; /* Ensures text is stacked vertically */
+    align-items: flex-start; /* Aligns text to the left */
+    gap: 0.2rem; /* Adds a small space between the username and description */
+}
+
+/* Avatar styling */
+.avatar-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Circular avatar */
+    object-fit: cover; /* Ensures the image fits properly */
+}
+
+/* Trend item alignment */
 .trending ul {
     list-style-type: none;
     padding: 0;
@@ -140,13 +156,19 @@ body, html {
     margin-left: 1rem;
 }
 
-.trending .gh-avatar, .trending .gh-avatar2, .trending .gh-avatar3, .trending .gh-avatar4 {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #34495e;
+/* Optional text styling */
+.username {
+    font-weight: bold;
+    font-size: 1rem;
 }
 
+.card-text {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+
+/*top buttons*/
 button.btn {
     padding: 0.5rem 1rem;
     background-color: #34495e;
@@ -159,9 +181,89 @@ button.btn {
 button.btn:hover {
     background-color: #2c3e50;
 }
+
 input[type="text"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 0.5rem;
     width: 100%;
+}
+
+/* Search Container */
+.search-container {
+    grid-row: 1;
+}
+
+/* Search Bar Styling */
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background: none;
+    flex: 1;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.search .menuItem {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Bell Icon Styling */
+.menuIcon.bell {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.menuIcon.bell:hover {
+    color: #007BFF;
+}
+
+/* Account Section */
+.account {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between avatar and name */
+}
+
+.account .name {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Greeting Container */
+.greeting-container {
+    text-align: left;
+    padding: 0 15px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.greeting-container .greeting {
+    margin: 0;
+    font-size: 16px;
+}
+
+.greeting-container .name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.avatar-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 10px;
 }
